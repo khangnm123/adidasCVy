@@ -1,0 +1,39 @@
+input[type="checkbox"]{
+    appearance: none;
+    -webkit-appearance: none;
+    height: 20px;
+    width: 20px;
+    border-radius: 5px;
+    background-color: none;
+    border: 1px solid #000;
+    margin: 0px 5px -4px 0px;
+}
+input[type="checkbox"]:checked{
+    background-color: #9747FF;
+    width: 21px;
+    height: 21px;
+    border: none;
+    outline: none;
+}
+
+label{
+    display: flex;
+    align-items: center;
+    padding: 5px 0px;
+    position: relative;
+    width: 280px;
+}
+#h2_content{
+    padding-top: 38px;
+    padding-bottom: 10px;
+}
+form{
+    a{
+        color: black;
+        display: flex;
+        justify-content: right;
+        width: 70%;
+        font-size: 16px;
+    }
+    
+}

@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <title>Addidas</title>
+</head>
+<body>
+    <div class="container">
+                <!-- Thanh nav đầu của Header trên cùng -->
+                <div class="nav_top">
+                    <p>*Free Shipping For Adiclub Members And All Orders In App*</p>
+                </div>
+                <!-- Thanh nav đầu của Menu trên cùng -->
+                <div class="nav_bottom">
+                    <div class="nav_bottom-center">
+                        <div class="list_container">
+                            <ul class="ul_list">
+                                <li><a href="#" class="logo"><img src="./image/adidas 1.png" alt=""></a></li>
+                                <li><a href="#">MEN</a></li>
+                                <li><a href="#">WOMEN</a></li>
+                                <li><a href="#" style="font-weight: bold;">UP TO 20% OFF</a></li>
+                                <li><a href="#" style="display: flex;"><i>ADI</i><p style="font-weight: bold;font-size: 18px;">CLUB</p></a></li>
+                            </ul>
+                            <div class="input_text">
+                                <input type="text" placeholder="Search.....">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </div>
+                            <ul class="ul_list list_ionc">
+                                <li><a href="#"><i class="fa-solid fa-heart" id="icon"></i></a></li>
+                                <li><a href="#"><i class="fa-solid fa-circle-user" id="icon"></i></a></li>
+                                <li><a href="#"><i class="fa-solid fa-box-archive" id="icon"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!--Slider ảnh-->
+                <div class="carousel">
+                    <div class="carousel_content">
+                        <div class="button_register">
+                            <button><a href="#">Register Now</a></button>
+                        </div>
+                        <img src="./image/Ảnh chụp Màn hình 2024-08-29 lúc 21.50.34 1.png" alt="">
+                    </div>
+                    
+                </div>
+                <!--Product List-->
+                <div class="product_list">
+                    <div class="product_list-content">
+                        <!--Filter Product-->
+                            <div class="content_left">
+                                <h2>All Products</h2>
+                                <p class="filter">Filter</p>
+                                <div class="price">
+                                    <h2>Price</h2>
+                                </div>
+                                <div class="double-slider-box">
+                                    <div class="range-slider">
+                                        <span class="slider-track"></span>
+                                        <input type="range" name="min_val" class="min-val" min="10" max="500" value="50" oninput="slideMin()">
+                                        <input type="range" name="max_val" class="max-val" min="10" max="500" value="200" oninput="slideMax()">
+                                        <div class="tooltip min-tooltip"></div>
+                                        <div class="tooltip max-tooltip">$200</div>
+                                    </div>
+                                </div>
+                                <!--Filter CheckBox-->
+                                <div class="flowers-wrap">
+                                    <form>
+                                      <label><input type="checkbox" name="fl-shirt" value="t-shirt" id="t-shirt" /> <p>T-shirts</p></label>
+                                      <label><input type="checkbox" name="fl-shirt" value="sneakers" id="sneakers" />  <p>Sneakers</p></label>
+                                      <label><input type="checkbox" name="fl-shirt" value="skirts" id="skirts" />  <p>Skirts</p></label>                  
+                                      <label><input type="checkbox" name="fl-shirt" value="headwear" id="headwear" />  <p>Headwear</p></label>
+                                      <a href="#">More...</a>
+                                    </form>
+                                    <h2 id="h2_content">Collection</h2>
+                                    <form>
+                                      <label><input type="checkbox" name="fl-collection" value="essentials" id="essentials" /> <p>Essentials</p></label>
+                                      <label><input type="checkbox" name="fl-collection" value="rdy" id="rdy" />  <p>RDY</p></label>
+                                      <label><input type="checkbox" name="fl-collection" value="barricade" id="barricade" />  <p>Barricade</p></label>
+                                      <label><input type="checkbox" name="fl-collection" value="zne" id="zne" />  <p>ZNE</p></label>
+                                      <label><input type="checkbox" name="fl-collection" value="adizero" id="adizero" />  <p>adizero</p></label>
+                                      <a href="#">More...</a>
+                                    </form>  
+                                    <h2 id="h2_content">Sexual</h2>
+                                    <form>
+                                      <label><input type="checkbox" name="fl-sexual" value="man" id="man" />  <p>Man</p> </label>
+                                      <label><input type="checkbox" name="fl-sexual" value="women" id="women" /> <p>Women</p></label>
+                                      <label><input type="checkbox" name="fl-sexual" value="unisex" id="unisex" /> <p>Unisex</p></label>
+                                    </form>
+                                    <h2 id="h2_content">Colors</h2>
+                                    <form>
+                                      <label><input type="checkbox" name="fl-color" value="white" id="white" />  
+                                        <p>White</p> 
+                                        <div class="cricle_color">
+                                            <div class="white_color"></div>
+                                            <div class="white1_color"></div>
+                                            <div class="white2_color"></div>
+                                        </div>
+                                    </label>
+                                      <label><input type="checkbox" name="fl-color" value="blue" id="blue" /> <p>Blue</p>
+                                        <div class="cricle_color">
+                                            <div class="blue_color"></div>
+                                            <div class="blue1_color"></div>
+                                            <div class="blue2_color"></div>
+                                            <div class="blue3_color"></div>
+                                            <div class="blue4_color"></div>
+                                        </div>
+                                    </label>
+                                      <label>
+                                        <input type="checkbox" name="fl-color" value="green" id="green" /> <p>Green</p>
+                                        <div class="cricle_color">
+                                            <div class="green_color"></div>
+                                            <div class="green1_color"></div>
+                                            <div class="green2_color"></div>
+                                            <div class="green3_color"></div>
+                                        </div>
+                                    </label>
+                                    </form>
+                                    <h2 id="h2_content">New Arrivals</h2>
+                                    <form>
+                                      <label><input type="checkbox" name="fl-years" value="2024" id="2024" /> <p>2024</p></label>
+                                      <label><input type="checkbox" name="fl-years" value="2023" id="2023" /> <p>2023</p></label>
+                                      <a href="#">More...</a>
+                                    </form>
+                                    <div class="button_apply">
+                                        <button>
+                                            <a href="#">Apply</a>
+                                        </button>
+                                    </div>
+                                  </div>
+                                 
+                            </div>
+                        <!--List Product-->
+                            <div class="content_right">
+                                <div class="product_content">
+                                    <div class="item" id="list" data-id="gazelle" data-category="t-shirt adizero man white 2024">
+                                        <div class="heart">
+                                            <img src="./image/Group 92.png" alt="">
+                                        </div>
+                                        <div class="thumnail_text">
+                                            <a href="#">
+                                                <img src="./image/203732670-1-white 1.png" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="content_title">
+                                            <p class="title">Adidas Originals Gazelle Bold Sneaker in pink and orange </p>
+                                            <p class="color">Color: <b>Beige</b></p>
+                                        </div>
+                                    </div>
+                                    <div class="item"  id="list" data-id="gazelle" data-category="sneakers essentials man blue 2024">
+                                        <div class="heart">
+                                            <img src="./image/Group 92.png" alt="">
+                                        </div>
+                                        <div class="thumnail_text">
+                                            <a href="#">
+                                                <img src="./image/Mask group.png" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="content_title">
+                                            <p class="title">Adidas Originals Gazelle Bold Sneaker in pink and orange </p>
+                                            <p class="color">Color: <b>Red</b></p>
+                                        </div>
+                                    </div>
+                                    <div class="item"   id="list" data-id="gazelle" data-category="sneakers adizero man white 2023">
+                                        <div class="heart">
+                                            <img src="./image/Group 92.png" alt="">
+                                        </div>
+                                        <div class="thumnail_text">
+                                            <a href="#">
+                                                <img src="./image/image 3.png" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="content_title">
+                                            <p class="title">Adidas Originals Gazelle Bold Sneaker in pink and orange </p>
+                                            <p class="color">Color: <b>Navy</b></p>
+                                        </div>
+                                    </div>
+                                    <div class="item" id="list" data-id="gazelle" data-category="sneakers rdy women 2024">
+                                        <div class="heart">
+                                            <img src="./image/Group 92.png" alt="">
+                                        </div>
+                                        <div class="thumnail_text">
+                                            <a href="#">
+                                                <img src="./image/image 4.png" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="content_title">
+                                            <p class="title">Adidas Originals Gazelle Bold Sneaker in pink and orange </p>
+                                            <p class="color">Color: <b>Pink</b></p>
+                                        </div>
+                                    </div>
+                                    <div class="item" data-id="gazelle" data-category="t-shirt sneakers adizero women blue 2024">
+                                        <div class="heart">
+                                            <img src="./image/Group 92.png" alt="">
+                                        </div>
+                                        <div class="thumnail_text">
+                                            <a href="#">
+                                                <img src="./image/image 5.png" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="content_title">
+                                            <p class="title">Soccer Tiro Croppred t-shirt in navy blue </p>
+                                            <p class="color">Color: <b>Navy</b></p>
+                                        </div>
+                                    </div>
+                                    <div class="item" data-id="gazelle" data-category="sneakers adizero women 2024">
+                                        <div class="heart">
+                                            <img src="./image/Group 92.png" alt="">
+                                        </div>
+                                        <div class="title_top">
+                                            <div class="text_black">
+                                                <p>Exclusive</p>
+                                            </div>
+                                        </div>
+                                        <div class="thumnail_text">
+                                            <a href="#">
+                                                <img src="./image/image 7.png" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="content_title">
+                                            <p class="title">Adidas Originals Gazelle Sneaker in purple and yellow </p>
+                                            <p class="color">Color: <b>Blue</b></p>
+                                        </div>
+                                    </div>
+                                    <div class="item" data-id="gazelle" data-category="sneakers adizero man white 2024">
+                                        <div class="heart">
+                                            <img src="./image/Group 92.png" alt="">
+                                        </div>
+                                        <div class="thumnail_text">
+                                            <a href="#">
+                                                <img src="./image/Mask group (1).png" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="content_title">
+                                            <p class="title">Handball Spezial sneakers in light blue and orange</p>
+                                            <p class="color">Color: <b>Purple</b></p>
+                                        </div>
+                                    </div>
+                                    <div class="item" data-id="gazelle" data-category="t-shirt sneakers adizero men women blue 2023">
+                                        <div class="heart">
+                                            <img src="./image/Group 92.png" alt="">
+                                        </div>
+                                        <div class="title_top">
+                                            <div class="text_black">
+                                                <p>Exclusive</p>
+                                            </div>
+                                        </div>
+                                        <div class="thumnail_text">
+                                            <a href="#">
+                                                <img src="./image/Mask group (2).png" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="content_title">
+                                            <p class="title">Adidas Originals Gazelle Sneaker in blue and black </p>
+                                            <p class="color">Color: <b>Blue</b></p>
+                                        </div>
+                                    </div>
+                                    <div class="item" data-id="gazelle" data-category="headwear t-shirt barricade women green 2024">
+                                        <div class="heart">
+                                            <img src="./image/Group 92.png" alt="">
+                                        </div>
+                                        <div class="thumnail_text">
+                                            <a href="#">
+                                                <img src="./image/Mask group (3).png" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="content_title">
+                                            <p class="title">Adidas Originals Adicolor 3 stripe t-shirt in green </p>
+                                            <p class="color">Color: <b>Green</b></p>
+                                        </div>
+                                    </div>
+                                    <div class="item" data-id="gazelle" data-category="sneakers adizero man women white 2024">
+                                        <div class="heart">
+                                            <img src="./image/Group 92.png" alt="">
+                                        </div>
+                                        <div class="thumnail_text">
+                                            <a href="#">
+                                                <img src="./image/Mask group (4).png" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="content_title">
+                                            <p class="title">Adidas Originals Gazelle Sneaker in pink and blue </p>
+                                            <p class="color">Color: <b>Pink</b></p>
+                                        </div>
+                                    </div>
+                                    <div class="item" data-id="gazelle" data-category="sneakers t-shirt adizero man white 2023">
+                                        <div class="heart">
+                                            <img src="./image/Group 92.png" alt="">
+                                        </div>
+                                        <div class="title_top">
+                                            <div class="text_black">
+                                                <p>Exclusive</p>
+                                            </div>
+                                        </div>
+                                        <div class="thumnail_text">
+                                            <a href="#">
+                                                <img src="./image/Mask group (5).png" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="content_title">
+                                            <p class="title">Adidas Originals SL 72 OG sneakers in red and lilac </p>
+                                            <p class="color">Color: <b>Red</b></p>
+                                        </div>
+                                    </div>
+                                    <div class="item" data-id="gazelle" data-category="t-shirt  headwear  women white 2024">
+                                        <div class="heart">
+                                            <img src="./image/Group 92.png" alt="">
+                                        </div>
+                                        <div class="thumnail_text">
+                                            <a href="#">
+                                                <img src="./image/Mask group (6).png" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="content_title">
+                                            <p class="title">Soccer Tiro crop T-shirt in black with yellow and green stripes </p>
+                                            <p class="color">Color: <b>Black</b></p>
+                                        </div>
+                                    </div>
+                                    <div class="item" data-id="gazelle" data-category="sneakers t-shirt adizero man white 2023">
+                                        <div class="heart">
+                                            <img src="./image/Group 92.png" alt="">
+                                        </div>
+                                        <div class="title_top">
+                                            <div class="text_black">
+                                                <p>Exclusive</p>
+                                            </div>
+                                        </div>
+                                        <div class="thumnail_text">
+                                            <a href="#">
+                                                <img src="./image/Mask group (5).png" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="content_title">
+                                            <p class="title">Adidas Originals SL 72 OG sneakers in red and lilac </p>
+                                            <p class="color">Color: <b>Red</b></p>
+                                        </div>
+                                    </div>
+                                    <div class="item" data-id="gazelle" data-category="t-shirt  headwear  women white 2024">
+                                        <div class="heart">
+                                            <img src="./image/Group 92.png" alt="">
+                                        </div>
+                                        <div class="thumnail_text">
+                                            <a href="#">
+                                                <img src="./image/Mask group (6).png" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="content_title">
+                                            <p class="title">Soccer Tiro crop T-shirt in black with yellow and green stripes </p>
+                                            <p class="color">Color: <b>Black</b></p>
+                                        </div>
+                                    </div>
+                                    <div class="item" data-id="gazelle" data-category="t-shirt  headwear  women white 2024">
+                                        <div class="heart">
+                                            <img src="./image/Group 92.png" alt="">
+                                        </div>
+                                        <div class="thumnail_text">
+                                            <a href="#">
+                                                <img src="./image/Mask group (6).png" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="content_title">
+                                            <p class="title">Soccer Tiro crop T-shirt in black with yellow and green stripes </p>
+                                            <p class="color">Color: <b>Black</b></p>
+                                        </div>
+                                    </div>
+                                    <div class="item" data-id="gazelle" data-category="sneakers adizero man women white 2024">
+                                        <div class="heart">
+                                            <img src="./image/Group 92.png" alt="">
+                                        </div>
+                                        <div class="thumnail_text">
+                                            <a href="#">
+                                                <img src="./image/Mask group (4).png" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="content_title">
+                                            <p class="title">Adidas Originals Gazelle Sneaker in pink and blue </p>
+                                            <p class="color">Color: <b>Pink</b></p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="button_load" id="loadMore">
+                                    <button>
+                                        <a href="#">Load More</a>
+                                    </button>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+                <!--Banner Addidas-->
+                <div class="banner_content">
+                    <div class="banner_content-bg">
+                        <h2>Become a member & get 15% off at <i>ADI</i>Club</h2>
+                        <div class="button_signup">
+                            <button>
+                                <a href="">Sign Up For Free</a><img src="./image/Arrow 1.png" alt="">
+                            </button>
+                        </div>
+                    </div>
+                    <div class="bg_adiclub"><img src="./image/ADICLUB (1).png" alt=""></div>
+                    <div class="bg_adiclub1"><img src="./image/ADICLUB.png" alt=""></div>
+                </div>
+                <!--Footer Content-->
+                <div class="footer_content">
+                    <div class="footer_content-bg">
+                        <div class="text_content">
+                            <ul>
+                                <li><a href="#" id="test">Help and Information</a></li>
+                                <li><a href="#">Help</a></li>
+                                <li><a href="#">Track order</a></li>
+                                <li><a href="#">Delivery & returns</a></li>
+                                <li><a href="#">Adidas Premier</a></li>
+                                <li><a href="#">10% Student Discount</a></li>
+                                <li><a href="#">Sitemap</a></li>
+                            </ul>
+                            <ul>
+                                <li><a href="#" id="test">ABOUT ADIDAS</a></li>
+                                <li><a href="#">About us</a></li>
+                                <li><a href="#">Careers at ADIDAS</a></li>
+                                <li><a href="#">Corporate respnsibility</a></li>
+                                <li><a href="#">Investors' site</a></li>
+                            </ul>
+                            <ul>
+                                <li><a href="#" id="test">MORE FROM ADIDAS</a></li>
+                                <li><a href="#">Mobile and Adidas apps</a></li>
+                                <li><a href="#">Adidas Marketplace</a></li>
+                                <li><a href="#">E-gifft cards</a></li>
+                                <li><a href="#">Black Friday</a></li>
+                                <li><a href="#">Refer A Friend</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!--Icon List-->
+                <div class="list_icon">
+                    <div class="list_icon-content">
+                        <div class="icon_list">
+                         <img src="./image/icon/image 13.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <!--Footer End-->
+                <div class="footer_end">
+                    <div class="footer_end-bg">
+                        <div class="text_content">
+                            <div class="text_a">
+                                <a href="#">© 2024 ADIDAS</a>
+                            </div>
+                            <div class="text1_a">
+                                <a href="#">Privacy & Cookies | </a>  <a href="#">Ts&Cs | </a><a href="#">Accessibility</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    </div>
+    <script src="./js/price_range.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <!--Jquery code Filter-->
+    <script>
+        var $filterCheckboxes = $('input[type="checkbox"]');
+var filterFunc = function() {
+  
+  var selectedFilters = {};
+
+  $filterCheckboxes.filter(':checked').each(function() {
+
+    if (!selectedFilters.hasOwnProperty(this.name)) {
+      selectedFilters[this.name] = [];
+    }
+
+    selectedFilters[this.name].push(this.value);
+  });
+
+  // create a collection containing all of the filterable elements
+  var $filteredResults = $('.item');
+
+  // loop over the selected filter name -> (array) values pairs
+  $.each(selectedFilters, function(name, filterValues) {
+
+    // filter each .flower element
+    $filteredResults = $filteredResults.filter(function() {
+
+      var matched = false,
+        currentFilterValues = $(this).data('category').split(' ');
+
+      // loop over each category value in the current .flower's data-category
+      $.each(currentFilterValues, function(_, currentFilterValue) {
+
+        // if the current category exists in the selected filters array
+        // set matched to true, and stop looping. as we're ORing in each
+        // set of filters, we only need to match once
+
+        if ($.inArray(currentFilterValue, filterValues) != -1) {
+          matched = true;
+          return false;
+        }
+      });
+
+      // if matched is true the current .flower element is returned
+      return matched;
+
+    });
+  });
+
+  $('.item').hide().filter($filteredResults).show();
+}
+
+$filterCheckboxes.on('change', filterFunc);  
+
+    </script>
+    <!--Jquery content-->
+    <script>
+           $(document).ready(function(){
+    $(".item").slice(0, 12).show();
+    $("#loadMore").on("click", function(e){
+      e.preventDefault();
+      $(".item:hidden").slice(0, 4).slideDown();
+      if($(".item:hidden").length == 0) {
+        $("#loadMore").text("No Content").addClass("noContent");
+      }
+    });
+    
+  })
+    </script>
+</body>
+</html>
