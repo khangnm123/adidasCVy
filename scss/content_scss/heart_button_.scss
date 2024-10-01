@@ -1,0 +1,141 @@
+.button_apply{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-color: #000;
+    margin: 40px 0px;
+    border-radius: 30px;
+    cursor: pointer;
+    button{
+        background: none;
+        outline: none;
+        text-align: center;
+        border: none;
+        padding: 15px 0px;
+        a{
+            text-decoration: none;
+            color: #FFFFFF;
+            font-size: 20px;
+        }
+    }
+}
+.button_load{
+    position: absolute;
+    right: 20px;
+    bottom: -90px;
+    background: #FFFFFF;
+    padding: 15px 70px;
+    border: 1px solid #9747FF;
+    border-radius: 40px;
+    cursor: pointer;
+    button{
+        background: none;
+        outline: none;
+        border: none;
+        color: #000000;
+        a{
+            text-decoration: none;
+            font-size: 20px;
+            text-transform: uppercase;
+            font-weight: bold;
+            color: #6F00FF;
+        }
+    }
+}
+
+.placement {
+    width: 100px;
+    height: 100px;
+    background: url("https://cssanimation.rocks/images/posts/steps/heart.png") no-repeat;
+    background-position: 0 0;
+    cursor: pointer;
+    transition: background-position 1s steps(28);
+    transition-duration: 0s;
+    
+    &.is-active {
+      transition-duration: 1s;
+      background-position: -2800px 0;
+    }
+  }
+
+
+  //Icon
+  .list_icon{
+    width: 100%;
+    position: relative;
+    &-content{
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px 0px;
+        .icon_list{
+            ul{
+                list-style-type: none;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                li{
+                    padding: 0px 15px;
+                    img{
+                        width: 60px;
+                        height: 40px;
+                    }
+                }
+            }
+        }
+    }
+}
+.icon_ion{
+    font-size: 5px;
+    color: white;
+}
+#facebook{
+    background-color: #0D5385;
+    width: 30px;
+    height: 30px;
+    border-radius: 25px;
+    padding: 5px 5px;
+}
+#instagram{
+    background-color:#9747FF ;
+    width: 30px;
+    height: 30px;
+    border-radius: 25px;
+    padding: 5px 5px;
+}
+#snap_chat{
+    background-color: yellow ;
+    width: 30px;
+    height: 30px;
+    border-radius: 25px;
+    padding: 5px 5px;
+}
+#content{
+    font-size: 30px;
+    color: #D9D9D9;
+}
+#visa{
+    background-color: #D9D9D9;
+    border: 1px sloid #FFFFFF;
+    border-radius: 5px;
+    width: 70px;
+}
+#mastercard{
+    background-color: #000000;
+    border-radius: 5px;
+}
+#paypal{
+    background-color: #D9D9D9;
+    border-radius: 5px;
+    border:2px solid #D9D9D9;
+}
+#afterpay{
+    font-size: 16px;
+    img{
+        background-color: #98FFBB;
+        width: 60px;
+        height: 30px;
+        padding: 2px 15px;
+        border-radius: 5px;
+        color: #000000;
+    }
+}

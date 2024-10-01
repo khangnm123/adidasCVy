@@ -17,18 +17,28 @@
                 <div class="nav_bottom">
                     <div class="nav_bottom-center">
                         <div class="list_container">
+                            <img src="./image/adidas 1.png" alt="">
                             <ul class="ul_list">
-                                <li><a href="#" class="logo"><img src="./image/adidas 1.png" alt=""></a></li>
                                 <li><a href="#">MEN</a></li>
                                 <li><a href="#">WOMEN</a></li>
                                 <li><a href="#" style="font-weight: bold;">UP TO 20% OFF</a></li>
                                 <li><a href="#" style="display: flex;"><i>ADI</i><p style="font-weight: bold;font-size: 18px;">CLUB</p></a></li>
                             </ul>
+                            <!--List Menu-->
+                            <div class="input_text1">
+                                <input type="text" placeholder="Search.....">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </div>
+                            <div class="img_center"><img src="./image/adidas 1.png" alt=""></div>
+                            <!--Responsive content-->
                             <div class="input_text">
                                 <input type="text" placeholder="Search.....">
                                 <i class="fa-solid fa-magnifying-glass"></i>
                             </div>
-                            <ul class="ul_list list_ionc">
+                            <ul class="ul_list1 list_ionc">
+                                <li>
+                                    <div class="menu"><i class="fa-solid fa-bars"></i></div>
+                                </li>
                                 <li><a href="#"><i class="fa-solid fa-heart" id="icon"></i></a></li>
                                 <li><a href="#"><i class="fa-solid fa-circle-user" id="icon"></i></a></li>
                                 <li><a href="#"><i class="fa-solid fa-box-archive" id="icon"></i></a></li>
@@ -42,7 +52,9 @@
                         <div class="button_register">
                             <button><a href="#">Register Now</a></button>
                         </div>
-                        <img src="./image/Ảnh chụp Màn hình 2024-08-29 lúc 21.50.34 1.png" alt="">
+                        <img src="./image/Ảnh chụp Màn hình 2024-08-29 lúc 21.50.34 1.png" alt="" class="img1">
+                        <img src="./image/Mask group (7).png" alt="" class="img2">
+
                     </div>
                     
                 </div>
@@ -74,8 +86,9 @@
                                       <label><input type="checkbox" name="fl-shirt" value="headwear" id="headwear" />  <p>Headwear</p></label>
                                       <a href="#">More...</a>
                                     </form>
-                                    <h2 id="h2_content">Collection</h2>
+                                    
                                     <form>
+                                        <h2 id="h2_content">Collection</h2>
                                       <label><input type="checkbox" name="fl-collection" value="essentials" id="essentials" /> <p>Essentials</p></label>
                                       <label><input type="checkbox" name="fl-collection" value="rdy" id="rdy" />  <p>RDY</p></label>
                                       <label><input type="checkbox" name="fl-collection" value="barricade" id="barricade" />  <p>Barricade</p></label>
@@ -83,14 +96,16 @@
                                       <label><input type="checkbox" name="fl-collection" value="adizero" id="adizero" />  <p>adizero</p></label>
                                       <a href="#">More...</a>
                                     </form>  
-                                    <h2 id="h2_content">Sexual</h2>
+                                   
                                     <form>
+                                        <h2 id="h2_content">Sexual</h2>
                                       <label><input type="checkbox" name="fl-sexual" value="man" id="man" />  <p>Man</p> </label>
                                       <label><input type="checkbox" name="fl-sexual" value="women" id="women" /> <p>Women</p></label>
                                       <label><input type="checkbox" name="fl-sexual" value="unisex" id="unisex" /> <p>Unisex</p></label>
                                     </form>
-                                    <h2 id="h2_content">Colors</h2>
+                                    
                                     <form>
+                                        <h2 id="h2_content">Colors</h2>
                                       <label><input type="checkbox" name="fl-color" value="white" id="white" />  
                                         <p>White</p> 
                                         <div class="cricle_color">
@@ -118,8 +133,97 @@
                                         </div>
                                     </label>
                                     </form>
-                                    <h2 id="h2_content">New Arrivals</h2>
+                                  
                                     <form>
+                                        <h2 id="h2_content">New Arrivals</h2>
+                                      <label><input type="checkbox" name="fl-years" value="2024" id="2024" /> <p>2024</p></label>
+                                      <label><input type="checkbox" name="fl-years" value="2023" id="2023" /> <p>2023</p></label>
+                                      <a href="#">More...</a>
+                                    </form>
+                                    <div class="button_apply">
+                                        <button>
+                                            <a href="#">Apply</a>
+                                        </button>
+                                    </div>
+                                  </div>
+                                 
+                            </div>
+                            <div class="content_left1">
+                                <div class="left_context">
+                                    <h2>All Products</h2>
+                                    <p class="filter">Filter</p>
+                                    <div class="price">
+                                        <h2>Price</h2>
+                                    </div>
+                                    <div class="double-slider-box">
+                                        <div class="range-slider">
+                                            <span class="slider-track"></span>
+                                            <input type="range" name="min_val" class="min-val" min="10" max="500" value="50" oninput="slideMin()">
+                                            <input type="range" name="max_val" class="max-val" min="10" max="500" value="200" oninput="slideMax()">
+                                            <div class="tooltip min-tooltip"></div>
+                                            <div class="tooltip max-tooltip">$200</div>
+                                        </div>
+                                    </div>
+                                    <form>
+                                        <label><input type="checkbox" name="fl-shirt" value="t-shirt" id="t-shirt" /> <p>T-shirts</p></label>
+                                        <label><input type="checkbox" name="fl-shirt" value="sneakers" id="sneakers" />  <p>Sneakers</p></label>
+                                        <label><input type="checkbox" name="fl-shirt" value="skirts" id="skirts" />  <p>Skirts</p></label>                  
+                                        <label><input type="checkbox" name="fl-shirt" value="headwear" id="headwear" />  <p>Headwear</p></label>
+                                        <a href="#">More...</a>
+                                      </form>
+                                      <form>
+                                        <h2 id="h2_content">Collection</h2>
+                                      <label><input type="checkbox" name="fl-collection" value="essentials" id="essentials" /> <p>Essentials</p></label>
+                                      <label><input type="checkbox" name="fl-collection" value="rdy" id="rdy" />  <p>RDY</p></label>
+                                      <label><input type="checkbox" name="fl-collection" value="barricade" id="barricade" />  <p>Barricade</p></label>
+                                      <label><input type="checkbox" name="fl-collection" value="zne" id="zne" />  <p>ZNE</p></label>
+                                      <label><input type="checkbox" name="fl-collection" value="adizero" id="adizero" />  <p>adizero</p></label>
+                                      <a href="#">More...</a>
+                                    </form>  
+                                   
+                                </div>
+                              
+                                <!--Filter CheckBox-->
+                                <div class="flowers-wrap">
+                                    <form>
+                                        <h2 id="h2_content">Sexual</h2>
+                                      <label><input type="checkbox" name="fl-sexual" value="man" id="man" />  <p>Man</p> </label>
+                                      <label><input type="checkbox" name="fl-sexual" value="women" id="women" /> <p>Women</p></label>
+                                      <label><input type="checkbox" name="fl-sexual" value="unisex" id="unisex" /> <p>Unisex</p></label>
+                                    </form>
+                                    
+                                    <form>
+                                        <h2 id="h2_content">Colors</h2>
+                                      <label><input type="checkbox" name="fl-color" value="white" id="white" />  
+                                        <p>White</p> 
+                                        <div class="cricle_color">
+                                            <div class="white_color"></div>
+                                            <div class="white1_color"></div>
+                                            <div class="white2_color"></div>
+                                        </div>
+                                    </label>
+                                      <label><input type="checkbox" name="fl-color" value="blue" id="blue" /> <p>Blue</p>
+                                        <div class="cricle_color">
+                                            <div class="blue_color"></div>
+                                            <div class="blue1_color"></div>
+                                            <div class="blue2_color"></div>
+                                            <div class="blue3_color"></div>
+                                            <div class="blue4_color"></div>
+                                        </div>
+                                    </label>
+                                      <label>
+                                        <input type="checkbox" name="fl-color" value="green" id="green" /> <p>Green</p>
+                                        <div class="cricle_color">
+                                            <div class="green_color"></div>
+                                            <div class="green1_color"></div>
+                                            <div class="green2_color"></div>
+                                            <div class="green3_color"></div>
+                                        </div>
+                                    </label>
+                                    </form>
+                                  
+                                    <form>
+                                        <h2 id="h2_content">New Arrivals</h2>
                                       <label><input type="checkbox" name="fl-years" value="2024" id="2024" /> <p>2024</p></label>
                                       <label><input type="checkbox" name="fl-years" value="2023" id="2023" /> <p>2023</p></label>
                                       <a href="#">More...</a>
@@ -136,8 +240,10 @@
                             <div class="content_right">
                                 <div class="product_content">
                                     <div class="item" id="list" data-id="gazelle" data-category="t-shirt adizero man white 2024">
-                                        <div class="heart">
-                                            <img src="./image/Group 92.png" alt="">
+                                        <div class="bg_heart">
+                                            <div class="heart">
+                                                <div class="placement"></div>
+                                              </div>
                                         </div>
                                         <div class="thumnail_text">
                                             <a href="#">
@@ -151,8 +257,8 @@
                                     </div>
                                     <div class="item"  id="list" data-id="gazelle" data-category="sneakers essentials man blue 2024">
                                         <div class="heart">
-                                            <img src="./image/Group 92.png" alt="">
-                                        </div>
+                                            <div class="placement"></div>
+                                          </div>
                                         <div class="thumnail_text">
                                             <a href="#">
                                                 <img src="./image/Mask group.png" alt="">
@@ -165,8 +271,8 @@
                                     </div>
                                     <div class="item"   id="list" data-id="gazelle" data-category="sneakers adizero man white 2023">
                                         <div class="heart">
-                                            <img src="./image/Group 92.png" alt="">
-                                        </div>
+                                            <div class="placement"></div>
+                                          </div>
                                         <div class="thumnail_text">
                                             <a href="#">
                                                 <img src="./image/image 3.png" alt="">
@@ -179,8 +285,8 @@
                                     </div>
                                     <div class="item" id="list" data-id="gazelle" data-category="sneakers rdy women 2024">
                                         <div class="heart">
-                                            <img src="./image/Group 92.png" alt="">
-                                        </div>
+                                            <div class="placement"></div>
+                                          </div>
                                         <div class="thumnail_text">
                                             <a href="#">
                                                 <img src="./image/image 4.png" alt="">
@@ -193,8 +299,8 @@
                                     </div>
                                     <div class="item" data-id="gazelle" data-category="t-shirt sneakers adizero women blue 2024">
                                         <div class="heart">
-                                            <img src="./image/Group 92.png" alt="">
-                                        </div>
+                                            <div class="placement"></div>
+                                          </div>
                                         <div class="thumnail_text">
                                             <a href="#">
                                                 <img src="./image/image 5.png" alt="">
@@ -207,8 +313,8 @@
                                     </div>
                                     <div class="item" data-id="gazelle" data-category="sneakers adizero women 2024">
                                         <div class="heart">
-                                            <img src="./image/Group 92.png" alt="">
-                                        </div>
+                                            <div class="placement"></div>
+                                          </div>
                                         <div class="title_top">
                                             <div class="text_black">
                                                 <p>Exclusive</p>
@@ -226,8 +332,8 @@
                                     </div>
                                     <div class="item" data-id="gazelle" data-category="sneakers adizero man white 2024">
                                         <div class="heart">
-                                            <img src="./image/Group 92.png" alt="">
-                                        </div>
+                                            <div class="placement"></div>
+                                          </div>
                                         <div class="thumnail_text">
                                             <a href="#">
                                                 <img src="./image/Mask group (1).png" alt="">
@@ -240,8 +346,8 @@
                                     </div>
                                     <div class="item" data-id="gazelle" data-category="t-shirt sneakers adizero men women blue 2023">
                                         <div class="heart">
-                                            <img src="./image/Group 92.png" alt="">
-                                        </div>
+                                            <div class="placement"></div>
+                                          </div>
                                         <div class="title_top">
                                             <div class="text_black">
                                                 <p>Exclusive</p>
@@ -259,8 +365,8 @@
                                     </div>
                                     <div class="item" data-id="gazelle" data-category="headwear t-shirt barricade women green 2024">
                                         <div class="heart">
-                                            <img src="./image/Group 92.png" alt="">
-                                        </div>
+                                            <div class="placement"></div>
+                                          </div>
                                         <div class="thumnail_text">
                                             <a href="#">
                                                 <img src="./image/Mask group (3).png" alt="">
@@ -273,8 +379,8 @@
                                     </div>
                                     <div class="item" data-id="gazelle" data-category="sneakers adizero man women white 2024">
                                         <div class="heart">
-                                            <img src="./image/Group 92.png" alt="">
-                                        </div>
+                                            <div class="placement"></div>
+                                          </div>
                                         <div class="thumnail_text">
                                             <a href="#">
                                                 <img src="./image/Mask group (4).png" alt="">
@@ -287,8 +393,8 @@
                                     </div>
                                     <div class="item" data-id="gazelle" data-category="sneakers t-shirt adizero man white 2023">
                                         <div class="heart">
-                                            <img src="./image/Group 92.png" alt="">
-                                        </div>
+                                            <div class="placement"></div>
+                                          </div>
                                         <div class="title_top">
                                             <div class="text_black">
                                                 <p>Exclusive</p>
@@ -306,8 +412,8 @@
                                     </div>
                                     <div class="item" data-id="gazelle" data-category="t-shirt  headwear  women white 2024">
                                         <div class="heart">
-                                            <img src="./image/Group 92.png" alt="">
-                                        </div>
+                                            <div class="placement"></div>
+                                          </div>
                                         <div class="thumnail_text">
                                             <a href="#">
                                                 <img src="./image/Mask group (6).png" alt="">
@@ -320,8 +426,8 @@
                                     </div>
                                     <div class="item" data-id="gazelle" data-category="sneakers t-shirt adizero man white 2023">
                                         <div class="heart">
-                                            <img src="./image/Group 92.png" alt="">
-                                        </div>
+                                            <div class="placement"></div>
+                                          </div>
                                         <div class="title_top">
                                             <div class="text_black">
                                                 <p>Exclusive</p>
@@ -339,8 +445,8 @@
                                     </div>
                                     <div class="item" data-id="gazelle" data-category="t-shirt  headwear  women white 2024">
                                         <div class="heart">
-                                            <img src="./image/Group 92.png" alt="">
-                                        </div>
+                                            <div class="placement"></div>
+                                          </div>
                                         <div class="thumnail_text">
                                             <a href="#">
                                                 <img src="./image/Mask group (6).png" alt="">
@@ -353,8 +459,8 @@
                                     </div>
                                     <div class="item" data-id="gazelle" data-category="t-shirt  headwear  women white 2024">
                                         <div class="heart">
-                                            <img src="./image/Group 92.png" alt="">
-                                        </div>
+                                            <div class="placement"></div>
+                                          </div>
                                         <div class="thumnail_text">
                                             <a href="#">
                                                 <img src="./image/Mask group (6).png" alt="">
@@ -367,8 +473,8 @@
                                     </div>
                                     <div class="item" data-id="gazelle" data-category="sneakers adizero man women white 2024">
                                         <div class="heart">
-                                            <img src="./image/Group 92.png" alt="">
-                                        </div>
+                                            <div class="placement"></div>
+                                          </div>
                                         <div class="thumnail_text">
                                             <a href="#">
                                                 <img src="./image/Mask group (4).png" alt="">
@@ -399,7 +505,7 @@
                         </div>
                     </div>
                     <div class="bg_adiclub"><img src="./image/ADICLUB (1).png" alt=""></div>
-                    <div class="bg_adiclub1"><img src="./image/ADICLUB.png" alt=""></div>
+                    <div class="bg_adiclub1"><img src="./image/ADICLUB (4).png" alt=""></div>
                 </div>
                 <!--Footer Content-->
                 <div class="footer_content">
@@ -435,9 +541,23 @@
                 <!--Icon List-->
                 <div class="list_icon">
                     <div class="list_icon-content">
-                        <div class="icon_list">
-                         <img src="./image/icon/image 13.png" alt="">
-                        </div>
+                      <div class="icon_list">
+                        <ul>
+                            <li><a href="#"><ion-icon name="logo-facebook" class="icon_ion" id="facebook"></ion-icon></a></li>
+                            <li><a href="#"><ion-icon name="logo-instagram" class="icon_ion" id="instagram"></ion-icon></a></li>
+                            <li><a href="#"><ion-icon name="logo-snapchat" class="icon_ion" id="snap_chat"></ion-icon></a></li>
+                            <li><a href="#" id="content">|</a></li>
+                            <li><a href="#"><img src="./image/icon/pngegg.png" alt="" id="visa"></a></li>
+                            <li><a href="#"><img src="./image/icon/pngwing.com.png" alt="" id="mastercard"></a></li>
+                            <li><a href="#"><img src="./image/icon/pngegg (1).png" alt="" id="paypal"></a></li>
+                            <li><a href="#"><img src="./image/icon/pngegg (2).png" alt=""></a></li>
+                            <li><a href="#"><img src="./image/icon/pngwing.com (1).png" alt=""></a></li>
+                            <li><a href="#"><img src="./image/icon/pngwing.com (2).png" alt=""></a></li>
+                            <li><a href="#"><img src="./image/icon/pngwing.com (3).png" alt=""></a></li>
+                            <li><a href="#"><img src="./image/icon/pngwing.com (4).png" alt=""></a></li>
+                            <li><a href="#" id="afterpay"><img src="./image/icon/Afterpay_Loop_White-1382x1228-ea517d7.png" alt=""></a></li>
+                        </ul>
+                      </div>
                     </div>
                 </div>
                 <!--Footer End-->
@@ -455,7 +575,10 @@
                 </div>
     </div>
     <script src="./js/price_range.js"></script>
+    <script src="./js/Heart.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     <!--Jquery code Filter-->
     <script>
         var $filterCheckboxes = $('input[type="checkbox"]');
@@ -522,6 +645,13 @@ $filterCheckboxes.on('change', filterFunc);
     });
     
   })
+    </script>
+    <script>
+        $(function() {
+        $(".placement").on("click", function() {
+      $(this).toggleClass("is-active");
+    });
+  });
     </script>
 </body>
 </html>
