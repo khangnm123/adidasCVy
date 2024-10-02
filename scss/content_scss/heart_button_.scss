@@ -20,9 +20,7 @@
     }
 }
 .button_load{
-    position: absolute;
-    right: 20px;
-    bottom: -90px;
+    margin: 20px 0px;
     background: #FFFFFF;
     padding: 15px 70px;
     border: 1px solid #9747FF;
@@ -42,23 +40,18 @@
         }
     }
 }
-
-.placement {
-    width: 100px;
-    height: 100px;
-    background: url("https://cssanimation.rocks/images/posts/steps/heart.png") no-repeat;
-    background-position: 0 0;
-    cursor: pointer;
-    transition: background-position 1s steps(28);
-    transition-duration: 0s;
-    
-    &.is-active {
-      transition-duration: 1s;
-      background-position: -2800px 0;
-    }
+ion-icon.is-active{
+    color: red;
+    stroke: none;
   }
-
-
+  ion-icon{
+    color: white;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #6F00FF;
+    padding: 5px 5px;
+  }
   //Icon
   .list_icon{
     width: 100%;
@@ -139,3 +132,144 @@
         color: #000000;
     }
 }
+
+//Accordion Content
+.accordion{
+    display: none;
+}
+.accordion{
+    width: 100%;
+    background:none;
+    margin: 0 5px;
+    border: none;
+    outline: none;
+  }
+  .accordion .accordion-content{
+    margin: 5px 0px;
+    background: #FFF7F0;
+    overflow: hidden;
+    background-color: #9747FF;
+        header{
+            .title{
+                color: #FFFFFF;
+                width: 100%;
+                font-size: 16px;
+                width: 100%;    
+                text-align: center;
+                text-transform: uppercase;
+            }
+            i{
+                color: #FFFFFF;
+            }
+        }
+        .center_flex{
+            background-color: #D9D9D9;
+            text-align: left;
+        }
+  }
+
+  .accordion-content header{
+    display: flex;
+    min-height: 50px;
+    padding: 0 15px;
+    cursor: pointer;
+    align-items: center;
+    justify-content: space-between;
+    transition: all 0.2s linear;
+  }
+  .accordion-content.open header{
+    min-height: 35px;
+  }
+  .accordion-content header .title{
+    font-size: 14px;
+    font-weight: 500;
+    color: #333;
+  }
+  .accordion-content header i{
+    font-size: 15px;
+    color: #333;
+  }
+  .accordion-content .description{
+    height: 0;
+    font-size: 12px;
+    color: #FFFFFF;
+    font-weight: 400;
+    padding: 0 15px;
+    transition: all 0.2s linear;
+    display: flex;
+    max-width: 1200px;
+    justify-content: center;
+    ul{
+        list-style-type: none;
+        li{
+            padding-top: 10px;
+            padding-bottom: 10px;
+            a{
+                text-decoration: none;
+                font-size: 16px;
+                color: #000000;
+            }
+        }
+    }
+  }
+
+  .search{
+    position: absolute;
+    left: 0;
+    bottom: -39px;
+    width: 100%;
+    padding: 5px 5px;
+    background: white;
+    display: flex;
+    transition: 2s ease-in-out;
+    display: none;
+    z-index: 1000;
+    border: 1px solid #0000;
+    .center_flex{
+        max-width: 1200px;
+        margin: auto;
+        input{
+            width: 260px;
+            height: 30px;
+            background: none;
+            border: none;
+            outline: none;
+        
+        }
+    }
+  }
+  .search_content{
+    i{
+        color: white;
+        font-size: 22px;
+    }
+  }
+  .off{
+    display: flex;
+  }
+  .menu_list{
+    text-align: center;
+    background:#000;
+    padding: 30px 0px;
+    display: none;
+        .ul_list1{
+            padding: 10px 0px;
+            list-style-type: none;
+            text-align: center;
+            li{ 
+                padding: 10px 0px;
+                border-bottom: 1px solid #FFFFFF;
+                a{
+                    text-decoration: none;
+                    color: white;
+                    justify-content: center;
+                }
+            }
+        }
+  }
+  .on{
+    display: block;
+  }
+  .search_content{
+    display: none;
+  }

@@ -155,6 +155,13 @@
             background-position: center;
             object-fit: cover
         }
+        .img2{
+            display: none;
+            object-fit: cover;
+            background-size: cover;
+            object-position: center;
+            background-repeat: no-repeat;
+        }
     }
     .product_list{
         width: 100%;
@@ -222,7 +229,6 @@
         position: relative;
         width: 100%;
         background-color: #000000;
-        margin-top: 80px;
         h2{
             padding: 50px 0px 25px 0px;
             color: white;
@@ -293,6 +299,7 @@
 .thumnail_text{
     display: inline-block;
     width: 100%;
+    position: relative;
     a{
         position: relative;
         padding-top: 110%;
@@ -308,11 +315,11 @@
         }
     }
 }
-.heart{
+.heart1{
     position: absolute;
     z-index: 1000;
-    bottom: 78px;
-    right: -10px;
+    bottom: 0px;
+    right: 25px;
     img{
         width: 30px;
     }
@@ -378,13 +385,12 @@
         height: 41px;
     }
 }
-.img2{
-    display: none;
-    object-fit: cover;
-    background-size: cover;
-    object-position: center;
-    background-repeat: no-repeat;
-}
+
 .content_left1{
     display: none;
+}
+.center_flex{
+    display: flex;
+    width: 100%;
+    justify-content: center;
 }

@@ -19,7 +19,7 @@
                         <div class="list_container">
                             <img src="./image/adidas 1.png" alt="">
                             <ul class="ul_list">
-                                <li><a href="#">MEN</a></li>
+                                <li><a href="#" >MEN</a></li>
                                 <li><a href="#">WOMEN</a></li>
                                 <li><a href="#" style="font-weight: bold;">UP TO 20% OFF</a></li>
                                 <li><a href="#" style="display: flex;"><i>ADI</i><p style="font-weight: bold;font-size: 18px;">CLUB</p></a></li>
@@ -29,6 +29,16 @@
                                 <input type="text" placeholder="Search.....">
                                 <i class="fa-solid fa-magnifying-glass"></i>
                             </div>
+                            <div class="search_content">
+                                <i class="fa-solid fa-magnifying-glass" onclick="Search()"></i>    
+                            </div>
+                            <div class="search" id="hello">
+                                <div class="center_flex">
+                                    <input type="text" placeholder="Search.....">
+                                    <i class="fa-solid fa-xmark" onclick="Close()"></i>
+                                </div>
+                            </div>
+                            
                             <div class="img_center"><img src="./image/adidas 1.png" alt=""></div>
                             <!--Responsive content-->
                             <div class="input_text">
@@ -37,7 +47,7 @@
                             </div>
                             <ul class="ul_list1 list_ionc">
                                 <li>
-                                    <div class="menu"><i class="fa-solid fa-bars"></i></div>
+                                    <div class="menu"><i class="fa-solid fa-bars" onclick="Clickcontent()"></i></div>
                                 </li>
                                 <li><a href="#"><i class="fa-solid fa-heart" id="icon"></i></a></li>
                                 <li><a href="#"><i class="fa-solid fa-circle-user" id="icon"></i></a></li>
@@ -45,6 +55,15 @@
                             </ul>
                         </div>
                     </div>
+                </div>
+                <!--Menu Mobile-->
+                <div class="menu_list" id="menu1">
+                    <ul class="ul_list1">
+                        <li><a href="#">MEN</a></li>
+                        <li><a href="#">WOMEN</a></li>
+                        <li><a href="#" style="font-weight: bold;">UP TO 20% OFF</a></li>
+                        <li><a href="#" style="display: flex;"><i>ADI</i><p style="font-weight: bold;font-size: 18px;">CLUB</p></a></li>
+                    </ul>
                 </div>
                 <!--Slider ảnh-->
                 <div class="carousel">
@@ -54,7 +73,6 @@
                         </div>
                         <img src="./image/Ảnh chụp Màn hình 2024-08-29 lúc 21.50.34 1.png" alt="" class="img1">
                         <img src="./image/Mask group (7).png" alt="" class="img2">
-
                     </div>
                     
                 </div>
@@ -106,15 +124,17 @@
                                     
                                     <form>
                                         <h2 id="h2_content">Colors</h2>
-                                      <label><input type="checkbox" name="fl-color" value="white" id="white" />  
-                                        <p>White</p> 
-                                        <div class="cricle_color">
-                                            <div class="white_color"></div>
-                                            <div class="white1_color"></div>
-                                            <div class="white2_color"></div>
+                                        <div class="color_flex">
+                                            <input type="checkbox" name="fl-color" value="white" id="white" />  
+                                            <p>White</p> 
+                                            <div class="cricle_color">
+                                                <div class="white_color"></div>
+                                                <div class="white1_color"></div>
+                                                <div class="white2_color"></div>
+                                            </div>
                                         </div>
-                                    </label>
-                                      <label><input type="checkbox" name="fl-color" value="blue" id="blue" /> <p>Blue</p>
+                                      <div class="color_flex">
+                                        <input type="checkbox" name="fl-color" value="blue" id="blue" /> <p>Blue</p>
                                         <div class="cricle_color">
                                             <div class="blue_color"></div>
                                             <div class="blue1_color"></div>
@@ -122,8 +142,8 @@
                                             <div class="blue3_color"></div>
                                             <div class="blue4_color"></div>
                                         </div>
-                                    </label>
-                                      <label>
+                                      </div>
+                                      <div class="color_flex">
                                         <input type="checkbox" name="fl-color" value="green" id="green" /> <p>Green</p>
                                         <div class="cricle_color">
                                             <div class="green_color"></div>
@@ -131,7 +151,7 @@
                                             <div class="green2_color"></div>
                                             <div class="green3_color"></div>
                                         </div>
-                                    </label>
+                                      </div>
                                     </form>
                                   
                                     <form>
@@ -148,6 +168,7 @@
                                   </div>
                                  
                             </div>
+                            <!--Cot responsive-->
                             <div class="content_left1">
                                 <div class="left_context">
                                     <h2>All Products</h2>
@@ -194,15 +215,17 @@
                                     
                                     <form>
                                         <h2 id="h2_content">Colors</h2>
-                                      <label><input type="checkbox" name="fl-color" value="white" id="white" />  
-                                        <p>White</p> 
-                                        <div class="cricle_color">
-                                            <div class="white_color"></div>
-                                            <div class="white1_color"></div>
-                                            <div class="white2_color"></div>
+                                        <div class="color_flex">
+                                            <input type="checkbox" name="fl-color" value="white" id="white" />  
+                                            <p>White</p> 
+                                            <div class="cricle_color">
+                                                <div class="white_color"></div>
+                                                <div class="white1_color"></div>
+                                                <div class="white2_color"></div>
+                                            </div>
                                         </div>
-                                    </label>
-                                      <label><input type="checkbox" name="fl-color" value="blue" id="blue" /> <p>Blue</p>
+                                      <div class="color_flex">
+                                        <input type="checkbox" name="fl-color" value="blue" id="blue" /> <p>Blue</p>
                                         <div class="cricle_color">
                                             <div class="blue_color"></div>
                                             <div class="blue1_color"></div>
@@ -210,8 +233,8 @@
                                             <div class="blue3_color"></div>
                                             <div class="blue4_color"></div>
                                         </div>
-                                    </label>
-                                      <label>
+                                      </div>
+                                      <div class="color_flex">
                                         <input type="checkbox" name="fl-color" value="green" id="green" /> <p>Green</p>
                                         <div class="cricle_color">
                                             <div class="green_color"></div>
@@ -219,7 +242,7 @@
                                             <div class="green2_color"></div>
                                             <div class="green3_color"></div>
                                         </div>
-                                    </label>
+                                      </div>
                                     </form>
                                   
                                     <form>
@@ -240,15 +263,18 @@
                             <div class="content_right">
                                 <div class="product_content">
                                     <div class="item" id="list" data-id="gazelle" data-category="t-shirt adizero man white 2024">
-                                        <div class="bg_heart">
-                                            <div class="heart">
-                                                <div class="placement"></div>
-                                              </div>
-                                        </div>
+                                      
                                         <div class="thumnail_text">
                                             <a href="#">
                                                 <img src="./image/203732670-1-white 1.png" alt="">
                                             </a>
+                                            <div class="bg_heart">
+                                                <div class="heart1">
+                                                    <ion-icon class="heart" name="heart">
+                                                        <div class='red-bg'></div>
+                                                      </ion-icon>
+                                                  </div>
+                                            </div>
                                         </div>
                                         <div class="content_title">
                                             <p class="title">Adidas Originals Gazelle Bold Sneaker in pink and orange </p>
@@ -256,13 +282,18 @@
                                         </div>
                                     </div>
                                     <div class="item"  id="list" data-id="gazelle" data-category="sneakers essentials man blue 2024">
-                                        <div class="heart">
-                                            <div class="placement"></div>
-                                          </div>
+                                      
                                         <div class="thumnail_text">
                                             <a href="#">
                                                 <img src="./image/Mask group.png" alt="">
                                             </a>
+                                            <div class="bg_heart">
+                                                <div class="heart1">
+                                                    <ion-icon class="heart" name="heart">
+                                                        <div class='red-bg'></div>
+                                                      </ion-icon>
+                                                  </div>
+                                            </div>
                                         </div>
                                         <div class="content_title">
                                             <p class="title">Adidas Originals Gazelle Bold Sneaker in pink and orange </p>
@@ -270,13 +301,18 @@
                                         </div>
                                     </div>
                                     <div class="item"   id="list" data-id="gazelle" data-category="sneakers adizero man white 2023">
-                                        <div class="heart">
-                                            <div class="placement"></div>
-                                          </div>
+                                     
                                         <div class="thumnail_text">
                                             <a href="#">
                                                 <img src="./image/image 3.png" alt="">
                                             </a>
+                                            <div class="bg_heart">
+                                                <div class="heart1">
+                                                    <ion-icon class="heart" name="heart">
+                                                        <div class='red-bg'></div>
+                                                      </ion-icon>
+                                                  </div>
+                                            </div>
                                         </div>
                                         <div class="content_title">
                                             <p class="title">Adidas Originals Gazelle Bold Sneaker in pink and orange </p>
@@ -284,13 +320,18 @@
                                         </div>
                                     </div>
                                     <div class="item" id="list" data-id="gazelle" data-category="sneakers rdy women 2024">
-                                        <div class="heart">
-                                            <div class="placement"></div>
-                                          </div>
+                                        
                                         <div class="thumnail_text">
                                             <a href="#">
                                                 <img src="./image/image 4.png" alt="">
                                             </a>
+                                            <div class="bg_heart">
+                                                <div class="heart1">
+                                                    <ion-icon class="heart" name="heart">
+                                                        <div class='red-bg'></div>
+                                                      </ion-icon>
+                                                  </div>
+                                            </div>
                                         </div>
                                         <div class="content_title">
                                             <p class="title">Adidas Originals Gazelle Bold Sneaker in pink and orange </p>
@@ -298,13 +339,18 @@
                                         </div>
                                     </div>
                                     <div class="item" data-id="gazelle" data-category="t-shirt sneakers adizero women blue 2024">
-                                        <div class="heart">
-                                            <div class="placement"></div>
-                                          </div>
+                                        
                                         <div class="thumnail_text">
                                             <a href="#">
                                                 <img src="./image/image 5.png" alt="">
                                             </a>
+                                            <div class="bg_heart">
+                                                <div class="heart1">
+                                                    <ion-icon class="heart" name="heart">
+                                                        <div class='red-bg'></div>
+                                                      </ion-icon>
+                                                  </div>
+                                            </div>
                                         </div>
                                         <div class="content_title">
                                             <p class="title">Soccer Tiro Croppred t-shirt in navy blue </p>
@@ -312,9 +358,7 @@
                                         </div>
                                     </div>
                                     <div class="item" data-id="gazelle" data-category="sneakers adizero women 2024">
-                                        <div class="heart">
-                                            <div class="placement"></div>
-                                          </div>
+                                  
                                         <div class="title_top">
                                             <div class="text_black">
                                                 <p>Exclusive</p>
@@ -324,6 +368,13 @@
                                             <a href="#">
                                                 <img src="./image/image 7.png" alt="">
                                             </a>
+                                            <div class="bg_heart">
+                                                <div class="heart1">
+                                                    <ion-icon class="heart" name="heart">
+                                                        <div class='red-bg'></div>
+                                                      </ion-icon>
+                                                  </div>
+                                            </div>
                                         </div>
                                         <div class="content_title">
                                             <p class="title">Adidas Originals Gazelle Sneaker in purple and yellow </p>
@@ -331,13 +382,18 @@
                                         </div>
                                     </div>
                                     <div class="item" data-id="gazelle" data-category="sneakers adizero man white 2024">
-                                        <div class="heart">
-                                            <div class="placement"></div>
-                                          </div>
+                                        
                                         <div class="thumnail_text">
                                             <a href="#">
                                                 <img src="./image/Mask group (1).png" alt="">
                                             </a>
+                                            <div class="bg_heart">
+                                                <div class="heart1">
+                                                    <ion-icon class="heart" name="heart">
+                                                        <div class='red-bg'></div>
+                                                      </ion-icon>
+                                                  </div>
+                                            </div>
                                         </div>
                                         <div class="content_title">
                                             <p class="title">Handball Spezial sneakers in light blue and orange</p>
@@ -345,9 +401,7 @@
                                         </div>
                                     </div>
                                     <div class="item" data-id="gazelle" data-category="t-shirt sneakers adizero men women blue 2023">
-                                        <div class="heart">
-                                            <div class="placement"></div>
-                                          </div>
+                                        
                                         <div class="title_top">
                                             <div class="text_black">
                                                 <p>Exclusive</p>
@@ -357,6 +411,13 @@
                                             <a href="#">
                                                 <img src="./image/Mask group (2).png" alt="">
                                             </a>
+                                            <div class="bg_heart">
+                                                <div class="heart1">
+                                                    <ion-icon class="heart" name="heart">
+                                                        <div class='red-bg'></div>
+                                                      </ion-icon>
+                                                  </div>
+                                            </div>
                                         </div>
                                         <div class="content_title">
                                             <p class="title">Adidas Originals Gazelle Sneaker in blue and black </p>
@@ -364,13 +425,18 @@
                                         </div>
                                     </div>
                                     <div class="item" data-id="gazelle" data-category="headwear t-shirt barricade women green 2024">
-                                        <div class="heart">
-                                            <div class="placement"></div>
-                                          </div>
+                                      
                                         <div class="thumnail_text">
                                             <a href="#">
                                                 <img src="./image/Mask group (3).png" alt="">
                                             </a>
+                                            <div class="bg_heart">
+                                                <div class="heart1">
+                                                    <ion-icon class="heart" name="heart">
+                                                        <div class='red-bg'></div>
+                                                      </ion-icon>
+                                                  </div>
+                                            </div>
                                         </div>
                                         <div class="content_title">
                                             <p class="title">Adidas Originals Adicolor 3 stripe t-shirt in green </p>
@@ -378,13 +444,18 @@
                                         </div>
                                     </div>
                                     <div class="item" data-id="gazelle" data-category="sneakers adizero man women white 2024">
-                                        <div class="heart">
-                                            <div class="placement"></div>
-                                          </div>
+                                      
                                         <div class="thumnail_text">
                                             <a href="#">
                                                 <img src="./image/Mask group (4).png" alt="">
                                             </a>
+                                            <div class="bg_heart">
+                                                <div class="heart1">
+                                                    <ion-icon class="heart" name="heart">
+                                                        <div class='red-bg'></div>
+                                                      </ion-icon>
+                                                  </div>
+                                            </div>
                                         </div>
                                         <div class="content_title">
                                             <p class="title">Adidas Originals Gazelle Sneaker in pink and blue </p>
@@ -392,9 +463,7 @@
                                         </div>
                                     </div>
                                     <div class="item" data-id="gazelle" data-category="sneakers t-shirt adizero man white 2023">
-                                        <div class="heart">
-                                            <div class="placement"></div>
-                                          </div>
+                                    
                                         <div class="title_top">
                                             <div class="text_black">
                                                 <p>Exclusive</p>
@@ -404,6 +473,13 @@
                                             <a href="#">
                                                 <img src="./image/Mask group (5).png" alt="">
                                             </a>
+                                            <div class="bg_heart">
+                                                <div class="heart1">
+                                                    <ion-icon class="heart" name="heart">
+                                                        <div class='red-bg'></div>
+                                                      </ion-icon>
+                                                  </div>
+                                            </div>
                                         </div>
                                         <div class="content_title">
                                             <p class="title">Adidas Originals SL 72 OG sneakers in red and lilac </p>
@@ -411,13 +487,18 @@
                                         </div>
                                     </div>
                                     <div class="item" data-id="gazelle" data-category="t-shirt  headwear  women white 2024">
-                                        <div class="heart">
-                                            <div class="placement"></div>
-                                          </div>
+                                       
                                         <div class="thumnail_text">
                                             <a href="#">
                                                 <img src="./image/Mask group (6).png" alt="">
                                             </a>
+                                            <div class="bg_heart">
+                                                <div class="heart1">
+                                                    <ion-icon class="heart" name="heart">
+                                                        <div class='red-bg'></div>
+                                                      </ion-icon>
+                                                  </div>
+                                            </div>
                                         </div>
                                         <div class="content_title">
                                             <p class="title">Soccer Tiro crop T-shirt in black with yellow and green stripes </p>
@@ -425,9 +506,7 @@
                                         </div>
                                     </div>
                                     <div class="item" data-id="gazelle" data-category="sneakers t-shirt adizero man white 2023">
-                                        <div class="heart">
-                                            <div class="placement"></div>
-                                          </div>
+                                      
                                         <div class="title_top">
                                             <div class="text_black">
                                                 <p>Exclusive</p>
@@ -437,6 +516,13 @@
                                             <a href="#">
                                                 <img src="./image/Mask group (5).png" alt="">
                                             </a>
+                                            <div class="bg_heart">
+                                                <div class="heart1">
+                                                    <ion-icon class="heart" name="heart">
+                                                        <div class='red-bg'></div>
+                                                      </ion-icon>
+                                                  </div>
+                                            </div>
                                         </div>
                                         <div class="content_title">
                                             <p class="title">Adidas Originals SL 72 OG sneakers in red and lilac </p>
@@ -444,13 +530,18 @@
                                         </div>
                                     </div>
                                     <div class="item" data-id="gazelle" data-category="t-shirt  headwear  women white 2024">
-                                        <div class="heart">
-                                            <div class="placement"></div>
-                                          </div>
+                                        
                                         <div class="thumnail_text">
                                             <a href="#">
                                                 <img src="./image/Mask group (6).png" alt="">
                                             </a>
+                                            <div class="bg_heart">
+                                                <div class="heart1">
+                                                    <ion-icon class="heart" name="heart">
+                                                        <div class='red-bg'></div>
+                                                      </ion-icon>
+                                                  </div>
+                                            </div>
                                         </div>
                                         <div class="content_title">
                                             <p class="title">Soccer Tiro crop T-shirt in black with yellow and green stripes </p>
@@ -458,13 +549,18 @@
                                         </div>
                                     </div>
                                     <div class="item" data-id="gazelle" data-category="t-shirt  headwear  women white 2024">
-                                        <div class="heart">
-                                            <div class="placement"></div>
-                                          </div>
+                                      
                                         <div class="thumnail_text">
                                             <a href="#">
                                                 <img src="./image/Mask group (6).png" alt="">
                                             </a>
+                                            <div class="bg_heart">
+                                                <div class="heart1">
+                                                    <ion-icon class="heart" name="heart">
+                                                        <div class='red-bg'></div>
+                                                      </ion-icon>
+                                                  </div>
+                                            </div>
                                         </div>
                                         <div class="content_title">
                                             <p class="title">Soccer Tiro crop T-shirt in black with yellow and green stripes </p>
@@ -472,13 +568,18 @@
                                         </div>
                                     </div>
                                     <div class="item" data-id="gazelle" data-category="sneakers adizero man women white 2024">
-                                        <div class="heart">
-                                            <div class="placement"></div>
-                                          </div>
+                                        
                                         <div class="thumnail_text">
                                             <a href="#">
                                                 <img src="./image/Mask group (4).png" alt="">
                                             </a>
+                                            <div class="bg_heart">
+                                                <div class="heart1">
+                                                    <ion-icon class="heart" name="heart">
+                                                        <div class='red-bg'></div>
+                                                      </ion-icon>
+                                                  </div>
+                                            </div>
                                         </div>
                                         <div class="content_title">
                                             <p class="title">Adidas Originals Gazelle Sneaker in pink and blue </p>
@@ -486,10 +587,12 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="button_load" id="loadMore">
-                                    <button>
-                                        <a href="#">Load More</a>
-                                    </button>
+                                <div class="center_flex">
+                                    <div class="button_load" id="loadMore">
+                                        <button>
+                                            <a href="#">Load More</a>
+                                        </button>
+                                    </div>
                                 </div>
                             </div>
                     </div>
@@ -535,6 +638,56 @@
                                 <li><a href="#">Black Friday</a></li>
                                 <li><a href="#">Refer A Friend</a></li>
                             </ul>
+                        </div>
+                        <div class="accordion">
+                            <div class="accordion-content">
+                                <header>
+                                    <span class="title">Help And Information</span>
+                                    <i class="fa-solid fa-plus"></i>
+                                </header>
+                                <div class="center_flex description">
+                                    <ul>
+                                        <li><a href="#" id="test">Help and Information</a></li>
+                                        <li><a href="#">Help</a></li>
+                                        <li><a href="#">Track order</a></li>
+                                        <li><a href="#">Delivery & returns</a></li>
+                                        <li><a href="#">Adidas Premier</a></li>
+                                        <li><a href="#">10% Student Discount</a></li>
+                                        <li><a href="#">Sitemap</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="accordion-content">
+                                <header>
+                                    <span class="title">About Adidas</span>
+                                    <i class="fa-solid fa-plus"></i>
+                                </header>
+                                <div class="center_flex description">
+                                    <ul>
+                                        <li><a href="#" id="test">ABOUT ADIDAS</a></li>
+                                        <li><a href="#">About us</a></li>
+                                        <li><a href="#">Careers at ADIDAS</a></li>
+                                        <li><a href="#">Corporate respnsibility</a></li>
+                                        <li><a href="#">Investors' site</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="accordion-content">
+                                <header>
+                                    <span class="title">More From Adidas</span>
+                                    <i class="fa-solid fa-plus"></i>
+                                </header>
+                               <div class="center_flex description">
+                                <ul>
+                                    <li><a href="#" id="test">MORE FROM ADIDAS</a></li>
+                                    <li><a href="#">Mobile and Adidas apps</a></li>
+                                    <li><a href="#">Adidas Marketplace</a></li>
+                                    <li><a href="#">E-gifft cards</a></li>
+                                    <li><a href="#">Black Friday</a></li>
+                                    <li><a href="#">Refer A Friend</a></li>
+                                </ul>
+                               </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -646,12 +799,13 @@ $filterCheckboxes.on('change', filterFunc);
     
   })
     </script>
+    <!--Jqery Heart-->
     <script>
-        $(function() {
-        $(".placement").on("click", function() {
-      $(this).toggleClass("is-active");
-    });
+     $(function() {
+  $(".heart").on("click", function() {
+    $(this).toggleClass("is-active");
   });
+});
     </script>
 </body>
 </html>

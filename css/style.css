@@ -151,6 +151,13 @@
   background-position: center;
   object-fit: cover;
 }
+.container .carousel .img2 {
+  display: none;
+  object-fit: cover;
+  background-size: cover;
+  object-position: center;
+  background-repeat: no-repeat;
+}
 .container .product_list {
   width: 100%;
   position: relative;
@@ -217,7 +224,6 @@
   position: relative;
   width: 100%;
   background-color: #000000;
-  margin-top: 80px;
 }
 .container .banner_content h2 {
   padding: 50px 0px 25px 0px;
@@ -287,6 +293,7 @@
 .thumnail_text {
   display: inline-block;
   width: 100%;
+  position: relative;
 }
 .thumnail_text a {
   position: relative;
@@ -303,13 +310,13 @@
   top: 0;
 }
 
-.heart {
+.heart1 {
   position: absolute;
   z-index: 1000;
-  bottom: 78px;
-  right: -10px;
+  bottom: 0px;
+  right: 25px;
 }
-.heart img {
+.heart1 img {
   width: 30px;
 }
 
@@ -485,12 +492,34 @@ input[type=range]::-moz-range-thumb {
 }
 
 input[type=checkbox] {
-  height: 20px;
-  width: 20px;
-  border-radius: 5px;
-  background-color: none;
-  border: 1px solid #000;
-  margin: 0px 5px -4px 0px;
+  position: relative;
+  width: 28px;
+  height: 28px;
+  border: 1px solid #cfcfcf;
+  border-radius: 0.25rem;
+  appearance: none;
+  cursor: pointer;
+}
+
+input[type=checkbox]:checked {
+  background-color: #6F00FF;
+}
+
+input[type=checkbox]::before {
+  content: "";
+  position: absolute;
+  top: 4px;
+  left: 9px;
+  width: 5px;
+  height: 13px;
+  border: 4px solid transparent;
+  border-left: none;
+  border-top: none;
+  transform: rotate(45deg) scale(1);
+}
+
+input[type=checkbox]:checked::before {
+  border-color: #fff;
 }
 
 label {
@@ -498,7 +527,6 @@ label {
   align-items: center;
   padding: 5px 0px;
   position: relative;
-  width: 280px;
 }
 
 #h2_content {
@@ -514,15 +542,21 @@ form a {
   font-size: 16px;
 }
 
+.cricle_color {
+  position: relative;
+  right: 0px;
+  display: flex;
+  align-items: center;
+}
 .cricle_color .white_color {
   background-color: #ffffff;
   border-radius: 50%;
   width: 20px;
   height: 20px;
   cursor: pointer;
-  position: absolute;
-  right: 150px;
-  bottom: 5px;
+  position: relative;
+  right: 0px;
+  bottom: 0px;
 }
 .cricle_color .white1_color {
   background-color: #ECFBF0;
@@ -530,9 +564,9 @@ form a {
   width: 20px;
   height: 20px;
   cursor: pointer;
-  position: absolute;
-  right: 146px;
-  bottom: 5px;
+  position: relative;
+  right: 8px;
+  bottom: 0px;
 }
 .cricle_color .white2_color {
   background-color: #F1EEE6;
@@ -540,9 +574,9 @@ form a {
   width: 20px;
   height: 20px;
   cursor: pointer;
-  position: absolute;
-  right: 138px;
-  bottom: 5px;
+  position: relative;
+  right: 16px;
+  bottom: 0px;
 }
 .cricle_color .blue_color {
   background-color: #0D5385;
@@ -550,9 +584,9 @@ form a {
   width: 20px;
   height: 20px;
   cursor: pointer;
-  position: absolute;
-  right: 150px;
-  bottom: 5px;
+  position: relative;
+  right: -14px;
+  bottom: 0px;
 }
 .cricle_color .blue1_color {
   background-color: #9ED6FF;
@@ -560,9 +594,9 @@ form a {
   width: 20px;
   height: 20px;
   cursor: pointer;
-  position: absolute;
-  right: 140px;
-  bottom: 5px;
+  position: relative;
+  right: -2px;
+  bottom: 0px;
 }
 .cricle_color .blue2_color {
   background-color: #0094FF;
@@ -570,9 +604,9 @@ form a {
   width: 20px;
   height: 20px;
   cursor: pointer;
-  position: absolute;
-  right: 130px;
-  bottom: 5px;
+  position: relative;
+  right: 10px;
+  bottom: 0px;
 }
 .cricle_color .blue3_color {
   background-color: #3BD0FF;
@@ -580,9 +614,9 @@ form a {
   width: 20px;
   height: 20px;
   cursor: pointer;
-  position: absolute;
-  right: 120px;
-  bottom: 5px;
+  position: relative;
+  right: 20px;
+  bottom: 0px;
 }
 .cricle_color .blue4_color {
   background-color: #00618B;
@@ -590,9 +624,9 @@ form a {
   width: 20px;
   height: 20px;
   cursor: pointer;
-  position: absolute;
-  right: 110px;
-  bottom: 5px;
+  position: relative;
+  right: 27px;
+  bottom: 0px;
 }
 .cricle_color .green_color {
   background-color: #248B00;
@@ -600,9 +634,9 @@ form a {
   width: 20px;
   height: 20px;
   cursor: pointer;
-  position: absolute;
-  right: 150px;
-  bottom: 5px;
+  position: relative;
+  right: 0px;
+  bottom: 0px;
 }
 .cricle_color .green1_color {
   background-color: #0C4C22;
@@ -610,9 +644,9 @@ form a {
   width: 20px;
   height: 20px;
   cursor: pointer;
-  position: absolute;
-  right: 140px;
-  bottom: 5px;
+  position: relative;
+  right: 10px;
+  bottom: 0px;
 }
 .cricle_color .green2_color {
   background-color: #98FFBB;
@@ -620,9 +654,9 @@ form a {
   width: 20px;
   height: 20px;
   cursor: pointer;
-  position: absolute;
-  right: 130px;
-  bottom: 5px;
+  position: relative;
+  right: 18px;
+  bottom: 0px;
 }
 .cricle_color .green3_color {
   background-color: #D2FFE1;
@@ -630,9 +664,17 @@ form a {
   width: 20px;
   height: 20px;
   cursor: pointer;
-  position: absolute;
-  right: 120px;
-  bottom: 5px;
+  position: relative;
+  right: 25px;
+  bottom: 0px;
+}
+
+.color_flex {
+  display: flex;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  padding-top: 10px;
 }
 
 .button_apply {
@@ -658,9 +700,7 @@ form a {
 }
 
 .button_load {
-  position: absolute;
-  right: 20px;
-  bottom: -90px;
+  margin: 20px 0px;
   background: #FFFFFF;
   padding: 15px 70px;
   border: 1px solid #9747FF;
@@ -681,18 +721,18 @@ form a {
   color: #6F00FF;
 }
 
-.placement {
-  width: 100px;
-  height: 100px;
-  background: url("https://cssanimation.rocks/images/posts/steps/heart.png") no-repeat;
-  background-position: 0 0;
-  cursor: pointer;
-  transition: background-position 1s steps(28);
-  transition-duration: 0s;
+ion-icon.is-active {
+  color: red;
+  stroke: none;
 }
-.placement.is-active {
-  transition-duration: 1s;
-  background-position: -2800px 0;
+
+ion-icon {
+  color: white;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #6F00FF;
+  padding: 5px 5px;
 }
 
 .list_icon {
@@ -782,6 +822,152 @@ form a {
   color: #000000;
 }
 
+.accordion {
+  display: none;
+}
+
+.accordion {
+  width: 100%;
+  background: none;
+  margin: 0 5px;
+  border: none;
+  outline: none;
+}
+
+.accordion .accordion-content {
+  margin: 5px 0px;
+  background: #FFF7F0;
+  overflow: hidden;
+  background-color: #9747FF;
+}
+.accordion .accordion-content header .title {
+  color: #FFFFFF;
+  width: 100%;
+  font-size: 16px;
+  width: 100%;
+  text-align: center;
+  text-transform: uppercase;
+}
+.accordion .accordion-content header i {
+  color: #FFFFFF;
+}
+.accordion .accordion-content .center_flex {
+  background-color: #D9D9D9;
+  text-align: left;
+}
+
+.accordion-content header {
+  display: flex;
+  min-height: 50px;
+  padding: 0 15px;
+  cursor: pointer;
+  align-items: center;
+  justify-content: space-between;
+  transition: all 0.2s linear;
+}
+
+.accordion-content.open header {
+  min-height: 35px;
+}
+
+.accordion-content header .title {
+  font-size: 14px;
+  font-weight: 500;
+  color: #333;
+}
+
+.accordion-content header i {
+  font-size: 15px;
+  color: #333;
+}
+
+.accordion-content .description {
+  height: 0;
+  font-size: 12px;
+  color: #FFFFFF;
+  font-weight: 400;
+  padding: 0 15px;
+  transition: all 0.2s linear;
+  display: flex;
+  max-width: 1200px;
+  justify-content: center;
+}
+.accordion-content .description ul {
+  list-style-type: none;
+}
+.accordion-content .description ul li {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.accordion-content .description ul li a {
+  text-decoration: none;
+  font-size: 16px;
+  color: #000000;
+}
+
+.search {
+  position: absolute;
+  left: 0;
+  bottom: -39px;
+  width: 100%;
+  padding: 5px 5px;
+  background: white;
+  display: flex;
+  transition: 2s ease-in-out;
+  display: none;
+  z-index: 1000;
+  border: 1px solid rgba(0, 0, 0, 0);
+}
+.search .center_flex {
+  max-width: 1200px;
+  margin: auto;
+}
+.search .center_flex input {
+  width: 260px;
+  height: 30px;
+  background: none;
+  border: none;
+  outline: none;
+}
+
+.search_content i {
+  color: white;
+  font-size: 22px;
+}
+
+.off {
+  display: flex;
+}
+
+.menu_list {
+  text-align: center;
+  background: #000;
+  padding: 30px 0px;
+  display: none;
+}
+.menu_list .ul_list1 {
+  padding: 10px 0px;
+  list-style-type: none;
+  text-align: center;
+}
+.menu_list .ul_list1 li {
+  padding: 10px 0px;
+  border-bottom: 1px solid #FFFFFF;
+}
+.menu_list .ul_list1 li a {
+  text-decoration: none;
+  color: white;
+  justify-content: center;
+}
+
+.on {
+  display: block;
+}
+
+.search_content {
+  display: none;
+}
+
 @media only screen and (max-width: 768px) {
   .container .product_list-content .content_right .product_content {
     grid-template-columns: auto auto;
@@ -822,6 +1008,9 @@ form a {
     height: 20px;
     margin: 10px 10px;
   }
+  .container .product_list-content .content_left {
+    width: 32%;
+  }
   .container .product_list-content .content_right .item {
     width: auto;
   }
@@ -851,6 +1040,10 @@ form a {
   }
 }
 @media only screen and (max-width: 900px) {
+  .container .product_list-content .content_left {
+    padding-right: 5px;
+    padding-left: 5px;
+  }
   .container .product_list-content .content_right .item .title {
     font-size: 14px;
     padding-bottom: 5px;
@@ -880,7 +1073,7 @@ form a {
     padding: 16px 20px;
   }
   .container .product_list-content .content_left {
-    width: 25%;
+    width: 40%;
     padding-right: 10px;
     padding-left: 10px;
   }
@@ -895,7 +1088,7 @@ form a {
     display: none;
   }
   .container .banner_content h2 {
-    padding: 70px 0px 25px 0px;
+    padding: 70px 5px 25px 5px;
     font-size: 28px;
   }
   .container .banner_content .button_signup button {
@@ -941,7 +1134,16 @@ form a {
 }
 @media only screen and (max-width: 700px) {
   .container .product_list-content .content_left {
-    width: 32%;
+    width: 40%;
+  }
+  .footer_content-bg .text_content {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0px 20px;
+  }
+  .footer_content-bg .text_content ul {
+    padding-top: 20px;
+    padding-right: 20px;
   }
 }
 @media only screen and (max-width: 600px) {
@@ -951,25 +1153,162 @@ form a {
   .container .nav_top p {
     font-size: 14px;
   }
+  .container .product_list-content .content_right .item .title {
+    font-size: 12px;
+  }
 }
-@media only screen and (max-width: 525px) {
+@media only screen and (max-width: 575px) {
   .content_left {
     display: none;
   }
   .content_left1 {
-    display: flex !important;
+    display: grid !important;
+    grid-template-columns: auto auto;
+    justify-content: space-around;
     width: 100%;
-    padding: 0px 10px;
+    padding: 30px 10px;
+  }
+  .content_left1 .filter {
+    padding: 10px 0px;
   }
   .container .product_list-content {
     flex-wrap: wrap;
   }
+  .container .product_list-content .content_right .item .title {
+    font-size: 16px;
+  }
   .button_apply {
-    width: 70%;
     margin: 20px 0px;
   }
   form a {
     justify-content: center;
+  }
+  input[type=checkbox] {
+    margin: 0px 10px;
+  }
+}
+@media only screen and (max-width: 525px) {
+  .footer_content {
+    background: none;
+  }
+  .footer_content-bg {
+    padding: 0px;
+  }
+  .footer_content-bg .text_content {
+    padding: unset;
+    display: none;
+  }
+  .footer_content-bg .accordion {
+    display: block !important;
+  }
+  .container .banner_content h2 {
+    font-size: 20px;
+  }
+  .container .banner_content i {
+    font-size: 21px;
+  }
+  .container .product_list-content .content_right .item .title {
+    font-size: 12px;
+  }
+  .container .input_text1 {
+    display: none;
+  }
+  .container .nav_bottom-center .list_container {
+    padding: 5px 20px;
+  }
+  .search_content {
+    display: block;
+  }
+}
+@media only screen and (max-width: 435px) {
+  .container .footer_end {
+    background: #000;
+  }
+  .container .footer_end-bg .text_content {
+    flex-wrap: wrap;
+    padding: 0px 10px;
+  }
+  .container .banner_content .button_signup {
+    padding-bottom: 70px;
+  }
+  .container .banner_content .button_signup button {
+    padding: 5px 10px;
+    text-align: center;
+  }
+  .container .banner_content .button_signup button a {
+    font-size: 16px;
+  }
+  .container .banner_content .bg_adiclub img {
+    width: 110px;
+  }
+  .container .banner_content .bg_adiclub1 img {
+    width: 90px;
+  }
+  .container .banner_content h2 {
+    font-size: 16px;
+  }
+  .container .banner_content i {
+    font-size: 16px;
+  }
+  .container .carousel .img2 {
+    display: none !important;
+  }
+  .container .carousel img {
+    display: block;
+  }
+  .container .carousel .carousel_content .button_register {
+    display: none;
+  }
+  .container .product_list {
+    padding: 10px 0px;
+  }
+  .container .product_list-content .content_right .product_list {
+    column-gap: unset;
+  }
+  .container .product_list-content .content_right .item .title {
+    padding-top: 10px;
+  }
+  .container .product_list-content .content_right .item .color {
+    font-size: 12px;
+  }
+  .container .nav_top p {
+    font-size: 12px;
+  }
+  .container .nav_bottom-center .list_container .img_center img {
+    height: 24px !important;
+  }
+  .heart1 ion-icon {
+    width: 20px;
+    height: 20px;
+  }
+  .button_load {
+    padding: 10px 20px;
+  }
+  .button_load button a {
+    font-size: 16px;
+  }
+}
+@media only screen and (max-width: 375px) {
+  .container .nav_top p {
+    font-size: 7px;
+  }
+  .container .product_list-content .content_left1 .left_context h2 {
+    font-size: 21px;
+  }
+  .container .product_list-content .content_right .item .title {
+    font-size: 10px;
+  }
+  .container .product_list-content .flowers-wrap form #h2_content {
+    font-size: 20px;
+    padding-top: 42px;
+  }
+  .button_apply button {
+    padding: 10px 0px;
+  }
+}
+@media only screen and (max-width: 325px) {
+  .container .nav_top p {
+    font-size: 7px;
   }
 }
 .menu {
@@ -983,16 +1322,14 @@ form a {
   height: 41px;
 }
 
-.img2 {
-  display: none;
-  object-fit: cover;
-  background-size: cover;
-  object-position: center;
-  background-repeat: no-repeat;
-}
-
 .content_left1 {
   display: none;
+}
+
+.center_flex {
+  display: flex;
+  width: 100%;
+  justify-content: center;
 }
 
 /*# sourceMappingURL=style.css.map */
