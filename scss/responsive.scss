@@ -359,6 +359,12 @@
     input[type=checkbox] {
         margin: 0px 10px;
     }
+    .double-slider-box1{
+        display: block;
+    }
+    .double-slider-box{
+        display: none;
+    }
 }
 @media only screen and (max-width:525px) {
     .footer_content{
@@ -406,7 +412,6 @@
     .search_content{
         display: block;
     }
-    
 }
 @media only screen and (max-width:435px){
     .container{
@@ -539,6 +544,11 @@
                         }
                     }
                 }
+            }
+        }
+        .footer_end{
+            &-bg{
+                padding: 30px 3px;
             }
         }
     }
